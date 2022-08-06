@@ -1,0 +1,38 @@
+/*================================================================================
+
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+.ui-color-picker{
+    //width:auto !important;
+    margin: -8px !important;
+}
+
+
+.body{
+  font-family: 'Changa', sans-serif;
+
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #241e69fb;
+  }
+  
+  .dashboardContainer {
+    @media only screen and (max-width: 600px) {
+      width:100%
+    }
+    @media only screen and (min-width: 960px) {
+      width:50%
+    }
+  }
