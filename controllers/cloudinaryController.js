@@ -22,7 +22,7 @@ exports.uploadProfile = catchAsync( async (req, res) => {
         console.log("doc",doc)
        res.json({
           status: 'success',
-          message: 'Upload successful',
+          url:result.secure_url,
        });
     } catch (err) {
       console.log(err);
