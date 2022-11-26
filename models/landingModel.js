@@ -70,6 +70,10 @@ const landingSchema = new mongoose.Schema({
       },
     },
   ],
+  profileImage:{
+    type: String,
+    default: 'empty.jpg',
+  },
   photo: [
     {
       imageSrc: {

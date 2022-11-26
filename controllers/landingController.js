@@ -37,7 +37,7 @@ exports.getLandingsUser = catchAsync(async (req, res, next) => {
 
 exports.getLanding = catchAsync(async (req, res, next) => {
     let data = await Landing.findOne({ url:req.params.url }).exec();
-
+    
     if (!data) {
       return next(new AppError('No document found with that ID', 404));
     }

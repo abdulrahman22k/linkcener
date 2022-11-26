@@ -3,8 +3,9 @@ const userController = require('./../controllers/userController');
 const authController = require('./../controllers/authController');
 const landingController = require('./../controllers/landingController');
 const uploadController = require('./../controllers/uploadController');
-
+const cloudinaryController = require('./../controllers/cloudinaryController');
 const router = express.Router();
+const uploader = require("./../utils/multer");
 
 
 
@@ -17,6 +18,10 @@ const router = express.Router();
 //router.use(authController.restrictTo('admin'));
 
 //get landing by url
+
+router.
+    patch('/uploadProfile/:landingId', uploader.single("file"), cloudinaryController.uploadProfile);
+
 router.
     post('/uploadProfileImage/:landingId',uploadController.uploadProfileImage);
 router.

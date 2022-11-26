@@ -44,3 +44,8 @@ exports.uploadProfileImage = catchAsync(async (req, res, next) => {
 exports.getImage = catchAsync(async (req, res, next) => {
   res.download('./public/'+req.params.path)
 })
+
+
+exports.uploadProfile = catchAsync(async (req, res, next) => {
+  
+})
