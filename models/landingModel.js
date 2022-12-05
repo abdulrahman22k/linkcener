@@ -29,7 +29,7 @@ const landingSchema = new mongoose.Schema({
   },
   title: {
     type: String,
-    default: 'linksCenter',
+    default: 'link Center',
   },
   textColor: {
     type: String,
